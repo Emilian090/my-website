@@ -1,0 +1,241 @@
+/* Resetare de bază */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Negru pentru fundal */
+    color: #f5f5f5; /* Alb pal pentru text */
+    line-height: 1.6;
+}
+
+/* Stilizare antet */
+header {
+    background-color: #333333; /* Negru închis */
+    padding: 20px 0;
+    color: #f5c518; /* Auriu */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #f5c518; /* Auriu */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Stilizare secțiune intro */
+.intro {
+    text-align: center;
+    padding: 40px;
+}
+
+.intro img.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #f5c518; /* Auriu */
+}
+
+.intro p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #bbbbbb; /* Gri deschis pentru un contrast subtil */
+}
+
+/* Stilizare secțiune abilități */
+.skills {
+    background-color: #1e1e1e; /* Negru pentru fundal */
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f5c518; /* Auriu */
+}
+
+.skills ul {
+    list-style-type: none;
+    display: inline-block;
+    text-align: left;
+}
+
+.skills ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #f5f5f5; /* Alb pal */
+}
+
+/* Stilizare secțiune proiecte */
+.projects {
+    background-color: #1e1e1e; /* Negru pentru fundal */
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f5c518; /* Auriu */
+}
+
+.projects ul {
+    list-style-type: none;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.projects ul li {
+    background-color: #333333; /* Negru închis pentru carduri */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Umbre discrete */
+}
+
+.projects ul li h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f5c518; /* Auriu */
+}
+
+.projects ul li p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #f5f5f5; /* Alb pal */
+}
+
+.projects ul li a {
+    text-decoration: none;
+    color: #f5c518; /* Auriu */
+    font-weight: bold;
+}
+
+.projects ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Stilizare formular de contact */
+.contact-form {
+    background-color: #1e1e1e; /* Negru */
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f5c518; /* Auriu */
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #f5c518; /* Auriu */
+}
+
+.contact-form form input, 
+.contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #666666; /* Gri închis */
+    background-color: #333333; /* Negru închis */
+    color: #f5f5f5; /* Alb pal */
+}
+
+.contact-form form button {
+    background-color: #f5c518; /* Auriu */
+    color: #121212; /* Negru */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.contact-form form button:hover {
+    background-color: #d4a017; /* Auriu mai întunecat la hover */
+}
+
+/* Stilizare subsol */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333333; /* Negru închis */
+    color: #f5c518; /* Auriu */
+    margin-top: 40px;
+}
+
+/* Stilizare pentru dispozitive mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .projects ul li {
+        padding: 15px;
+    }
+
+    .contact-form form button {
+        font-size: 1rem;
+    }
+}
